@@ -16,6 +16,7 @@ class Post extends Model
 
     //membuat field tidak boleh di isi untuk menggunakan method create
     protected $guarded = ['id'];
+    protected $with = ['author', 'category'];
 
     public function category()
     {

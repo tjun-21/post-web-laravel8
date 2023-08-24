@@ -82,6 +82,6 @@ class DatabaseSeeder extends Seeder
 
         // data factory
         User::factory(5)->create();
-        Post::factory(10)->create();
+        Post::factory(30)->create();
     }
 }

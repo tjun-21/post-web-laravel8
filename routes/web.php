@@ -22,13 +22,15 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home"
+        "title" => "Home",
+        "active" => "home"
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
+        "active" => "about",
         "name" => "Tajun Nur, S.Tr.Kom",
         "email" => "tajunnur46@gmail.com",
         "img" => "profil.png"
